@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  background: url("https://cdn1.epicgames.com/ue/product/Screenshot/08-1920x1080-1207e4bf2ae8ebbf9cd4907bb4108ac4.jpg?resize=1&w=1920");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  height: 100vh;
+  position: relative;
+  transition: all 1s linear; 
+}
+.right {
+  background: url("https://cdn1.epicgames.com/ue/product/Screenshot/is2-1920x1080-27d7b70ab4e48e3ace8cfd86360c750b.jpg?resize=1&w=1920");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  height: 100vh;
+  position: relative;
+  transition: all 1s linear;
+  
+}
+
+.left .logo {
+  background: url("https://opengameart.org/sites/default/files/eagle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  height: 20vh;
+  width: 20vh;
+}
+
+.left .logo::after {
+    content: '';
+    background: url('https://purepng.com/public/uploads/large/curved-red-heart-outline-jul.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .right .logo::after {
+    content: '';
+    background: url('https://purepng.com/public/uploads/large/curved-red-heart-outline-jul.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+
+
+
+.right .logo {
+  background: url("https://opengameart.org/sites/default/files/star_0_0.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  height: 20vh;
+  width: 20vh;
+}
+
+.left:hover {
+  flex: 5;
+}
+.right:hover {
+  flex: 5;
+}
+
+.left:hover .logo::after{
+    opacity: 1;
+}
+.right:hover .logo::after{
+    opacity: 1;
+}
+
+/*https://purepng.com/public/uploads/large/purepng.com-lightlightelectromagnetic-radiationelectromagnetic-spectrumvisible-light-14115270641354abha.png
